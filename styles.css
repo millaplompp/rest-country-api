@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 50px;
+    background: #202020;
+    color: whitesmoke;
+    font-family: 'Outfit';
+}
+
+.countries {
+    max-width: fit-content;
+    margin: 20px 200px 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 130px;
+}
+
+.country-div {
+
+    background: #38383869;
+    border: 1px solid rgba(145, 145, 145, 0.13);
+    border-radius: 20px;
+}
+
+.text {
+    padding-left: 15px;
+    font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 15px;
+    color: rgb(126, 126, 126);
+}
+
+.main {
+    color: rgb(255, 255, 255);
+}
+
+
+img{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+    opacity: 100%;
+}
+
+img:hover{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+    opacity: 30%;
+}
+
+.search {
+    margin: 20px 0;
+    width: 25rem;
+    height: 2rem;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.226);
+    padding-left: 20px;
+    background-color: rgba(199, 199, 199, 0.082);
+    color: white;
+}
+
+button {
+    margin: 20px 0;
+    width: fit-content;
+    height: 2rem;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.226);
+    padding: px;
+    background-color: rgba(199, 199, 199, 0.082);
+    color: white;
+}
+
+@media screen and (max-width: 500px){
+    .countries {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px){
+    .countries {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    
+}
